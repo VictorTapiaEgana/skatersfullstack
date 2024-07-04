@@ -1,0 +1,38 @@
+<section id="login" class="container p-5 bg-dark text-white d-flex justify-content-center">
+
+        <h2 class="text-center">Skate Park</h2>
+        &nbsp;
+        <h3 class="text-center">Iniciar Sesión</h3>
+        
+           
+    <form id="formLogin" class="">
+        
+        <label for="email1" class="form-label">Email</label>
+
+        <div class="mb-3 text-center input-group">            
+            <span class="input-group-text" id="basic-addon1">✉</span>
+            <input type="email" class="form-control" id="email1" required>            
+        </div>
+
+        <label for="password2" class="form-label">Password</label>
+        
+        <div class="mb-3 text-center input-group">
+            <span class="input-group-text" id="basic-addon2">🔐</span>
+            <input type="password" class="form-control" id="password2" required>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <div id="alert" class="alert alert-danger d-flex align-items-center" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                    <div id="mensajeDeError">
+                    
+                    </div>
+          </div>
+        </div>
+        <button id="btnlogin" type="submit" class="btn btn-success">Ingresar</button>
+         &nbsp;   
+        <h6>¿Aún no tienes cuenta? <a href="/inscripcion">Regístrate</a></h4>
+
+    </form>
+
+</section>

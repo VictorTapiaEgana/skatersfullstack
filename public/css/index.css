@@ -1,0 +1,122 @@
+#banner{    
+    z-index: -1;
+}
+
+#inscribirse{
+
+    background-color: black;
+
+    button{
+        margin: 10px 0 10px 60px;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+}
+
+footer{
+    background-image: url('../images/footer.png');
+    background-position: center;    
+    background-repeat: repeat-x ;
+    height: 150px;    
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+
+    p{
+        text-align: center;
+        font-weight: 800;
+        color: black;
+    }
+
+    #rrss{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .imgrrss{
+        width: 40px;
+    }
+}
+
+#inscripcion{
+    padding: 50px;
+    margin-bottom: 50px;    
+}
+
+.footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#btnInscripcion{
+    position: relative;
+    z-index: 1;
+}
+
+#alert{
+    visibility:hidden;
+    width: 450px;    
+}
+
+.enmedio{
+    vertical-align: middle;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 30px;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formLogin{
+    width: 500px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    transform: scale(1.2);    
+    font-weight: 600;
+    color: red;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+}
+
+#profile
+{
+    width: 630px;
+}
+
+#pass{
+    display: flex;
+    justify-content:space-between;
+    align-self: center;
+}
+
+#liveToast2{
+
+    position: relative;
+    top: 50%;
+    width: 90%;
+
+}

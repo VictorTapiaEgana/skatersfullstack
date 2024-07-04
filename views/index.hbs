@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <title>skatepark</title>
+</head>
+
+<body class="container">
+
+    {{>navbar}}   
+    
+    {{#if inicio }}
+
+         {{>hero}}    
+      
+          <section id="inscribirse">
+               <button id="btnInscripcion" class="btn btn-danger rounded-0">INSCRIBIRSE > ></button>
+          </section>
+
+          {{> table}}
+
+    {{else}}      
+
+            {{>banner}}  
+            {{renderPartial partialName}}
+
+    {{/if}}   
+    
+
+    {{>footer}}  
+
+    {{#if inicio}}
+        <script src="/public/scripts/script.js"></script>
+    {{/if}}
+    
+
+    {{#if inscripcion}}
+            <script src="/public/scripts/inscripcion.js"></script>
+    {{/if}}
+
+    {{#if login}}
+                <script src="/public/scripts/login.js"></script>
+    {{/if}}
+
+    {{#if perfil}}
+                <script src="/public/scripts/perfil.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    {{/if}}
+
+
+    
+    <script src="/cssjs/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<section id="profile" class="container p-5">
+
+    <h2 class="text-center">Skate Park</h2>
+    &nbsp;
+    <h4 class="text-center">Editar Perfil</h4>
+
+    <div class="card">
+        <h5 class="card-header">Datos del perfil</h5>
+    
+        <div class="card-body">
+
+            <img id="imgProfile" width="70" height="70" class="img-fluid">
+
+            <div>
+                <strong><p id="nombreProfile" class="card-title"></p></strong>
+                <p id="correoProfile" class="card-text"></p>
+            </div>
+            
+        </div>
+
+    </div>
+
+{{!-- MODAL --}}
+    <div id="modal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Eliminar Skater</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>¿ Confirma que desea eliminar este registro ?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button id="btnConfirmarEliminacion" type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <form id ="formPerfil" class="container p-5 bg-black">
+        
+        <div class="mb-3">        
+            <label for="nombre_skater" class="form-label text-white">Nombre</label>
+            <input type="email" class="form-control" id="nombre_skater">            
+        </div>
+
+         <div id="pass" class="mb-3">
+
+            <div>
+                <label for="contrasena_skater" class="form-label text-white">Contraseña</label>
+                <input type="password" class="form-control" id="contrasena_skater" placeholder="nueva contraseña">                     
+            </div>        
+
+            <div>
+                <label for="contrasena2_skater" class="form-label text-white">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="contrasena2_skater" placeholder="reiterar contraseña">            
+            </div>
+
+        </div>        
+
+        <div class="mb-3">        
+            <label for="experiencia_skater" class="form-label text-white">Años de experiencia</label>
+            <input type="text" class="form-control" id="experiencia_skater">            
+        </div>
+
+        <div class="mb-3">        
+            <label for="especialidad_skater" class="form-label text-white">Expecialidad</label>
+            <input type="text" class="form-control" id="especialidad_skater">            
+        </div>
+
+       <div class="d-flex flex-column justify-content-center align-items-center">
+          <div id="alert" class="alert alert-danger d-flex align-items-center" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                    <div id="mensajeDeError">
+                    
+                    </div>
+          </div>
+       </div>
+
+
+        <button id="btnActualizar" class="btn btn-success">Actualizar</button>
+        <button id="btnEliminar" class="btn btn-danger">Eliminar perfil</button>
+
+</form>
+
+</section>
+

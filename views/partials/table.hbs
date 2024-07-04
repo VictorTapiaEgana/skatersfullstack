@@ -1,0 +1,37 @@
+<section id="table" style="background-color:yellow;">
+     <h2 class="text-center">Skate Park</h2>
+     <h3 class="text-center">Listado de participantes</h3>
+
+     <table class="table table-striped-columns table-hover table-dark">
+
+        <thead>
+        <tr class="text-center">
+            <th scope="col">#</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Años de experiencia</th>
+            <th scope="col">Especialidad</th>
+            <th scope="col">Estado</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+            {{#each listado}}
+
+               <tr class="text-center">
+                  <th scope="row" class="enmedio">{{increment @index}}</th>                  
+                  <td class="enmedio"><img class="img-fluid" src='/avatares/{{this.foto}}' alt="Imagen {{ this.nombre}}" width="50" height="50"></td>
+                  <td class="enmedio">{{ this.nombre }}</td>
+                  <td class="enmedio">{{ this.anos_experiencia }}</td>
+                  <td class="enmedio">{{ this.especialidad }}</td>
+                  <td class="enmedio">{{ estado this.estado }}</td>                  
+               </tr>
+
+            {{/each}}
+        
+        </tbody>
+        
+    </table>
+  
+</section>

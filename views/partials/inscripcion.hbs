@@ -1,0 +1,123 @@
+<section id="inscripcion" class="container bg-light">
+
+    <h2 class="text-center">Skate Park</h2>
+    <p class="text-center">Registro</p>
+    <hr>
+
+    <form class="bg-secondary p-5 rounded-5 d-flex flex-column justify-content-center">
+
+      <div class="d-flex justify-content-center gap-5">
+
+            <div class="izquierda text-center">
+              <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>        
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="anos" class="form-label">Años de experiencia<lidad</label>
+                    <input type="text" class="form-control" id="anos" name="anos" required>
+                </div>
+
+            </div>
+
+            <div class="derecha text-center">
+              <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>     
+
+              <div class="mb-3">
+                  <label for="password2" class="form-label">Repita Contraseña</label>
+                  <input type="password" class="form-control" id="password2" name="password2" required>
+              </div>
+
+              <div class="mb-3">
+
+                <label for="especialidad" class="form-label">Especialidad</label>
+                <input class="form-control" list="datalistOptions" id="especialidad" name="especialidad" placeholder="Escriba para buscar" required>
+
+                      <datalist id="datalistOptions">
+                            <option value="Ollie">
+                            <option value="Kickflip">
+                            <option value="Heelflip">
+                            <option value="Pop Shove-it">
+                            <option value="Frontside 180">
+                            <option value="Backside 180">
+                            <option value="Varial Kickflip">
+                            <option value="Varial Heelflip">
+                            <option value="Hardflip">
+                            <option value="Inward Heelflip">
+                            <option value="Tre Flip (360 Flip)">
+                            <option value="Laser Flip">
+                            <option value="Bigspin">
+                            <option value="Impossible">
+                            <option value="No Comply">
+                            <option value="Manual">
+                            <option value="Nose Manual">
+                            <option value="50-50 Grind">
+                            <option value="5-0 Grind">
+                            <option value="Nose Grind">
+                            <option value="Smith Grind">
+                            <option value="Feeble Grind">
+                            <option value="Boardslide">
+                            <option value="Lipslide">
+                            <option value="Bluntslide">
+                            <option value="Darkslide">
+                            <option value="Casperslide">
+                            <option value="Primo Slide">
+                            <option value="Airwalk">
+                            <option value="Boneless">
+                      </datalist>
+
+              </div>
+
+            </div>
+
+      </div>
+      {{!-- Mensaje de error de bootstrap --}}
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </symbol>
+      </svg>
+      <div class="d-flex flex-column justify-content-center align-items-center">
+          <div id="alert" class="alert alert-danger d-flex align-items-center" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                    <div id="mensajeDeError">
+                    
+                    </div>
+          </div>
+      </div>
+      <div class="footer d-flex flex-column justify-content-center text-center gap-3 p-3">
+
+          <div class="mb-3">
+            <label for="formFileSm" class="form-label">Foto de Perfil:</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file" name="foto">
+          </div>
+
+           <button id="btnGuardarRegistro" class="btn btn-primary">Registrarme</button>
+
+      </div>      
+          
+    </form>
+</section>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="/public/images/info.png" class="rounded me-2" alt="icono informativo" width="20" height="20">
+      <strong class="me-auto">Skaters</strong>
+      <small>Ahora</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+       Registro guardado exitosamente.
+    </div>
+  </div>
+</div>
