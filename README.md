@@ -1,5 +1,5 @@
 
-# Aplicación fullstack.
+# Aplicación fullstack con handlebars, postgress, jwt.
 
  Aplicación web que permite registrar participantes para una competencia deportiva, una vez registrado, permite entrar a su perfil de usuario permitiendo editarlo o eliminarlo previa autorizacion mediante JWT, los registros son almacenados y consultados desde una base de datos en postgres, se uso handlebars para renderizar el frontend.
 
