@@ -52,6 +52,24 @@
             └── table.hbs
 ```
 
+## Endpoints
+```
+    app.get('/')
+
+    app.get('/login')
+    app.post('/login')
+
+    app.get('/inscripcion')
+
+    app.get('/perfil')
+    app.put('/perfil')
+
+    app.post('/registro')
+    app.delete('/registro')
+
+
+```
+
 
 ## Dependencias
 ```

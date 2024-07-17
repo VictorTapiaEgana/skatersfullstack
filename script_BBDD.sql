@@ -7,13 +7,10 @@ CREATE TABLE skaters (id SERIAL,
 					  foto VARCHAR(255) NOT NULL, 
 					  estado BOOLEAN NOT NULL
 					 );
-
-
-					 
 					 
 SELECT id, email, nombre,password,anos_experiencia,especialidad,estado FROM skaters;
 
-SELECT  nombre,anos_experiencia, especialidad, foto, estado FROM skaters ORDER By nombre ASC;
+SELECT  nombre,anos_experiencia, especialidad, foto, email, estado FROM skaters ORDER By nombre ASC;
 
 UPDATE skaters SET nombre = $1 , password = $2, anos_experiencia = $3, especialidad =$4 WHERE email = $5;
 
