@@ -118,7 +118,7 @@ CREATE TABLE skaters (id SERIAL,
 					 );
 ```
 
-### Archivo de configuracion.
+### Archivo de configuracion .ENV
 
 ```
 SERVER_PORT = 3010
